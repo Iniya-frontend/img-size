@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <script>
+        function changes(){
+            console.log("working");
+            var image=document.getElementById("sel").value;
+        var size1=document.getElementById("sm").value;
+        var size2=document.getElementById("md").value;
+        var size3=document.getElementById("lg").value;
+        if (image=="sm") {
+            document.getElementById("img1").style.width="50px"; 
+        }
+        
+        else if(image=="md"){
+                document.getElementById("img1").style.width="200px";
+                console.log("done md");
+            }
+       
+            else{
+                document.getElementById("img1").style.width="400px";
+            console.log("else");
+}
+        }
+        
+    </script>
+
+<select id="sel" onchange="changes()">
+    <option>select the size</option>
+<option id="sm" value="sm">sm</option>
+<option id="md" value="md">md</option>
+<option id="lg" value="lg">lg</option>
+</select>
+<img id="img1"  src="./assets/bggg 1.jpg" alt="">
+</body>
+</html>
